@@ -1,9 +1,14 @@
-/*configuración general de color, fondo, tipografía, márgenes, h1, h2, p, etc*/
+/*configuración general de color, fondo, tipografía, márgenes, h1, h2, p, etc
+bootstrap me pisó el diseño del body y la barra nav en las dos webs que lo usé y me di cuenta recién. 
+Hay que corregirlo. Lo hardocodee en las dos páginas en particular (contacto-usé el botón- y productos -usé card-)*/
 *{padding: 0%;margin: 0%;font-family: 'Roboto Condensed', sans-serif;text-transform: uppercase;}
-body{background-color: #f3ecd4;color: #0c4b26;}
-h1{font-size: 3.5vw;text-align: center}
+body, .cuerpo{background-color: #f3ecd4;color: #0c4b26;}
+h1, .cuerpo .miH1{font-size: 3.5vw;text-align: center}
 h2{text-align: center; font-size: 2vw;margin-left: 15%;}
 p{font-size: 1.3vw;padding: 0 3vw;font-weight: bold;text-align: justify; line-height: 150%;}
+.cuerpo .miH1{font-weight: bold;}
+.cuerpo nav{height: 2.3vw;}
+
 
 /*Configuro el contenido dentro del MAIN del index*/
 .contenidoInicio{max-width: 1500px;width: 70vw;}
@@ -49,18 +54,17 @@ footer p, .icon{font-size: 0.8vw; text-align: center;-webkit-text-stroke: 1px bl
 footer .icon{color: white}
 
 /*barra de navegación horizontal*/
-nav{background-color: #0c4b26;text-align: center;font-size: 1.5vw}
-nav ul {list-style: none; display: inline-block;}
-nav ul li {float: left;margin: 0% 2vw;}
-nav ul li a{color: #f3ecd4; padding: 2px;}
-nav ul li a:hover{
+nav, .cuerpo nav{background-color: #0c4b26;text-align: center;font-size: 1.5vw;text-decoration: none;}
+nav ul, .cuerpo nav ul{list-style: none; display: inline-block;}
+nav ul li, .cuerpo nav ul li{float: left;margin: 0% 2vw;}
+nav ul li a, .cuerpo nav ul li a{color: #f3ecd4; padding: 2px;}
+nav ul li a:hover, .cuerpo nav ul li a:hover{
     padding: 18px 24px;
     font-size: 1.8vw;
     transition-property: all;
     transition-duration: 0.8s; /*con una duración de 0.6s*/
     transition-timing-function: ease;
 }
-
 /*Configura el Aside que funciona como barra de publicidad y de contacto*/
 aside .linkContacto{color:#0c4b26; font-size: 3vw;}
 aside .whatsappIcon:hover{color:green;}
