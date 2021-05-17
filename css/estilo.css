@@ -1,6 +1,6 @@
 /*configuración general de color, fondo, tipografía, márgenes, h1, h2, p, etc*/
 *{padding: 0%;margin: 0%;font-family: 'Roboto Condensed', sans-serif;text-transform: uppercase;}
-body{background-color: #f3ecd4 ;color: #0c4b26;}
+body{background-color: #f3ecd4;color: #0c4b26;}
 h1{font-size: 3.5vw;text-align: center}
 h2{text-align: center; font-size: 2vw;margin-left: 15%;}
 p{font-size: 1.3vw;padding: 0 3vw;font-weight: bold;text-align: justify; line-height: 150%;}
@@ -30,6 +30,7 @@ iframe {width: 50vw; height: 15vw;margin-left: 25%;border: 1px solid black;}
 .paginaRandom .linux {width: 14vw;}
 .paginaRandom .miniContenedor{margin: 0 auto;text-align: justify;}
 .paginaRandom .miniContenedor .parteA p{display: inline;}
+.paginaRandom .irA{margin:0; font-size: 1.3vw;font-style: oblique;}
 table{margin: 0 10%}
 td, th {border: 1px solid white;text-align: left;padding: 8px; font-size: 0.8vw;}
 th{text-align: center;font-size: 1vw;font-weight: bold;}
@@ -136,9 +137,9 @@ textarea {height:15vw;}
 
     .paginaRandom table{margin: 0;}
     .paginaRandom h2{font-size: 4vw;}
-    .paginaRandom p{float:left;}
+    .paginaRandom p{float:left;width: 40vw;}
     .paginaRandom a{margin-left: 25%;}
-    .paginaRandom .dosColumnas {display: flex;justify-content: space-between;}
+    .paginaRandom .dosColumnas {display: flex;}
     .paginaRandom p{flex-basis: calc(50%-1rem);}
     .paginaRandom .loguitoSO{margin:0 35%;}
     .paginaRandom br{display: block;}
@@ -182,6 +183,9 @@ textarea {height:15vw;}
     .quienesSomos p, ul{margin-right: 5%}
     .quienesSomos .ubicacion {margin: 0 auto;}
     .quienesSomos iframe {width: 200px; height: 200px}
+    .paginaRandom .dosColumnas{display: block;}
+    .paginaRandom p{width: 100%;font-size: 2vw;background-color:#0c4b2655;}
+    .paginaRandom .loguitoSO{margin: 0 50%;}
     aside{height: 15vw;}
     aside h3{font-size: 3vw;}
     aside .linkContacto{font-size: 2.8vw;} 
